@@ -414,12 +414,3 @@ Follow this 2-minute walkthrough when recording a demonstration:
      python main.py missing.css
      Write-Output "Exit code: $LASTEXITCODE"
      ```
-
-
-
-# Add your GitHub repository remote
-git remote add origin https://github.com/YOUR_USERNAME/css-intelligent-parser.git
-
-# Push to GitHub
-git push -u origin main
-```
