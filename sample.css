@@ -1,0 +1,68 @@
+/* ==========================================================================
+   Skill First Labs Sample Stylesheet
+   Demonstrates modern CSS3 constructs, variables, complex values, and at-rules
+   ========================================================================== */
+
+:root {
+    --primary-color: #4a90e2;
+    --accent-color: #e74c3c;
+    --spacing-unit: 16px;
+    --font-stack: "Inter", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Card component styling with multiple selectors and complex values */
+.card, .panel, #featured-card {
+    display: -webkit-box;
+    display: flex; /* duplicate declaration for fallback */
+    flex-direction: column;
+    margin: 10px 20px;
+    padding: calc(var(--spacing-unit) * 1.5);
+    color: #2c3e50 !important;
+    background-color: rgb(255, 255, 255);
+    background-image: url("images/background image.png");
+    font-family: var(--font-stack);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    width: calc(100% - 20px);
+}
+
+/* Theme override */
+[data-theme="dark"] .card {
+    background-color: #1a1a2e;
+    color: #ffffff !important;
+}
+
+/* Responsive design via nested @media at-rule */
+@media (max-width: 768px) {
+    .card, .panel {
+        margin: 5px 10px;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+}
+
+/* Keyframes animation demonstrating from, percentage, and to selectors */
+@keyframes slidein {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+/* Custom font definition */
+@font-face {
+    font-family: "CustomIconFont";
+    src: url("fonts/custom-icons.woff2") format("woff2"),
+         url("fonts/custom-icons.woff") format("woff");
+    font-display: swap;
+}

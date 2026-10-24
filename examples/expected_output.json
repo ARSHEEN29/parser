@@ -1,0 +1,352 @@
+{
+  "source": "sample.css",
+  "summary": {
+    "total_rules": 9,
+    "total_declarations": 29,
+    "unique_property_count": 18,
+    "unique_properties": [
+      "--accent-color",
+      "--font-stack",
+      "--primary-color",
+      "--spacing-unit",
+      "background-color",
+      "background-image",
+      "box-shadow",
+      "color",
+      "display",
+      "flex-direction",
+      "font-display",
+      "font-family",
+      "margin",
+      "opacity",
+      "padding",
+      "src",
+      "transform",
+      "width"
+    ],
+    "property_frequency": {
+      "display": 3,
+      "opacity": 3,
+      "background-color": 2,
+      "box-shadow": 2,
+      "color": 2,
+      "font-family": 2,
+      "margin": 2,
+      "transform": 2,
+      "width": 2,
+      "--accent-color": 1,
+      "--font-stack": 1,
+      "--primary-color": 1,
+      "--spacing-unit": 1,
+      "background-image": 1,
+      "flex-direction": 1,
+      "font-display": 1,
+      "padding": 1,
+      "src": 1
+    },
+    "properties_by_selector": {
+      "#featured-card": [
+        "display",
+        "display",
+        "flex-direction",
+        "margin",
+        "padding",
+        "color",
+        "background-color",
+        "background-image",
+        "font-family",
+        "box-shadow",
+        "width"
+      ],
+      ".card": [
+        "display",
+        "display",
+        "flex-direction",
+        "margin",
+        "padding",
+        "color",
+        "background-color",
+        "background-image",
+        "font-family",
+        "box-shadow",
+        "width",
+        "margin",
+        "width",
+        "box-shadow"
+      ],
+      ".hide-on-mobile": [
+        "display"
+      ],
+      ".panel": [
+        "display",
+        "display",
+        "flex-direction",
+        "margin",
+        "padding",
+        "color",
+        "background-color",
+        "background-image",
+        "font-family",
+        "box-shadow",
+        "width",
+        "margin",
+        "width",
+        "box-shadow"
+      ],
+      ":root": [
+        "--primary-color",
+        "--accent-color",
+        "--spacing-unit",
+        "--font-stack"
+      ],
+      "@font-face": [
+        "font-family",
+        "src",
+        "font-display"
+      ],
+      "[data-theme=\"dark\"] .card": [
+        "background-color",
+        "color"
+      ],
+      "keyframe:50%": [
+        "opacity"
+      ],
+      "keyframe:from": [
+        "transform",
+        "opacity"
+      ],
+      "keyframe:to": [
+        "transform",
+        "opacity"
+      ]
+    },
+    "diagnostics_count": 0,
+    "comments_count": 7
+  },
+  "rules": [
+    {
+      "type": "qualified_rule",
+      "selector": ":root",
+      "declaration_count": 4,
+      "declarations": [
+        {
+          "property": "--primary-color",
+          "value": "#4a90e2",
+          "important": false
+        },
+        {
+          "property": "--accent-color",
+          "value": "#e74c3c",
+          "important": false
+        },
+        {
+          "property": "--spacing-unit",
+          "value": "16px",
+          "important": false
+        },
+        {
+          "property": "--font-stack",
+          "value": "\"Inter\", \"Helvetica Neue\", Arial, sans-serif",
+          "important": false
+        }
+      ]
+    },
+    {
+      "type": "qualified_rule",
+      "selector": ".card, .panel, #featured-card",
+      "declaration_count": 11,
+      "declarations": [
+        {
+          "property": "display",
+          "value": "-webkit-box",
+          "important": false
+        },
+        {
+          "property": "display",
+          "value": "flex",
+          "important": false
+        },
+        {
+          "property": "flex-direction",
+          "value": "column",
+          "important": false
+        },
+        {
+          "property": "margin",
+          "value": "10px 20px",
+          "important": false
+        },
+        {
+          "property": "padding",
+          "value": "calc(var(--spacing-unit) * 1.5)",
+          "important": false
+        },
+        {
+          "property": "color",
+          "value": "#2c3e50",
+          "important": true
+        },
+        {
+          "property": "background-color",
+          "value": "rgb(255, 255, 255)",
+          "important": false
+        },
+        {
+          "property": "background-image",
+          "value": "url(\"images/background image.png\")",
+          "important": false
+        },
+        {
+          "property": "font-family",
+          "value": "var(--font-stack)",
+          "important": false
+        },
+        {
+          "property": "box-shadow",
+          "value": "0 10px 20px rgba(0, 0, 0, 0.15)",
+          "important": false
+        },
+        {
+          "property": "width",
+          "value": "calc(100% - 20px)",
+          "important": false
+        }
+      ]
+    },
+    {
+      "type": "qualified_rule",
+      "selector": "[data-theme=\"dark\"] .card",
+      "declaration_count": 2,
+      "declarations": [
+        {
+          "property": "background-color",
+          "value": "#1a1a2e",
+          "important": false
+        },
+        {
+          "property": "color",
+          "value": "#ffffff",
+          "important": true
+        }
+      ]
+    },
+    {
+      "type": "at_rule",
+      "at_keyword": "media",
+      "prelude": "(max-width: 768px)",
+      "rules": [
+        {
+          "type": "qualified_rule",
+          "selector": ".card, .panel",
+          "declaration_count": 3,
+          "declarations": [
+            {
+              "property": "margin",
+              "value": "5px 10px",
+              "important": false
+            },
+            {
+              "property": "width",
+              "value": "100%",
+              "important": false
+            },
+            {
+              "property": "box-shadow",
+              "value": "none",
+              "important": false
+            }
+          ]
+        },
+        {
+          "type": "qualified_rule",
+          "selector": ".hide-on-mobile",
+          "declaration_count": 1,
+          "declarations": [
+            {
+              "property": "display",
+              "value": "none",
+              "important": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "at_rule",
+      "at_keyword": "keyframes",
+      "prelude": "slidein",
+      "rules": [
+        {
+          "type": "keyframe_rule",
+          "selector": "from",
+          "declaration_count": 2,
+          "declarations": [
+            {
+              "property": "transform",
+              "value": "translateX(-100%)",
+              "important": false
+            },
+            {
+              "property": "opacity",
+              "value": "0",
+              "important": false
+            }
+          ]
+        },
+        {
+          "type": "keyframe_rule",
+          "selector": "50%",
+          "declaration_count": 1,
+          "declarations": [
+            {
+              "property": "opacity",
+              "value": "0.5",
+              "important": false
+            }
+          ]
+        },
+        {
+          "type": "keyframe_rule",
+          "selector": "to",
+          "declaration_count": 2,
+          "declarations": [
+            {
+              "property": "transform",
+              "value": "translateX(0%)",
+              "important": false
+            },
+            {
+              "property": "opacity",
+              "value": "1",
+              "important": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "at_rule",
+      "at_keyword": "font-face",
+      "prelude": "",
+      "declaration_count": 3,
+      "declarations": [
+        {
+          "property": "font-family",
+          "value": "\"CustomIconFont\"",
+          "important": false
+        },
+        {
+          "property": "src",
+          "value": "url(\"fonts/custom-icons.woff2\") format(\"woff2\"),\n         url(\"fonts/custom-icons.woff\") format(\"woff\")",
+          "important": false
+        },
+        {
+          "property": "font-display",
+          "value": "swap",
+          "important": false
+        }
+      ]
+    }
+  ],
+  "diagnostics": []
+}
