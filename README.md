@@ -415,24 +415,7 @@ Follow this 2-minute walkthrough when recording a demonstration:
      Write-Output "Exit code: $LASTEXITCODE"
      ```
 
----
 
-## 12. Git Commands for Submission
-
-To commit and push this project to GitHub:
-
-```powershell
-# Initialize git repository
-git init
-
-# Stage all files
-git add .
-
-# Commit project files
-git commit -m "feat: complete Skill First Labs Milestone 1 CSS Intelligent Parser"
-
-# Set main branch
-git branch -M main
 
 # Add your GitHub repository remote
 git remote add origin https://github.com/YOUR_USERNAME/css-intelligent-parser.git
